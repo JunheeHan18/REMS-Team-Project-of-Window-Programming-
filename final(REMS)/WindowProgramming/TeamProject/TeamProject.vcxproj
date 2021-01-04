@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{549062C5-66A2-4D57-AD7D-036925994B3F}</ProjectGuid>
+    <RootNamespace>TeamProject</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\ChartDirector\include\;..\ChartDirector\win32\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;..\ChartDirector\lib32\chartdir60.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>odbc32.lib;..\ChartDirector\lib32\chartdir60.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInfoDoc.h" />
+    <ClInclude Include="BaseInfoFrm.h" />
+    <ClInclude Include="BaseInfoView.h" />
+    <ClInclude Include="ChartDlg.h" />
+    <ClInclude Include="ChartViewer.h" />
+    <ClInclude Include="CheckDoc.h" />
+    <ClInclude Include="CheckFrm.h" />
+    <ClInclude Include="CheckView2.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="DBs_181127\DataManageDB.h" />
+    <ClInclude Include="DBs_181127\dbdefine.h" />
+    <ClInclude Include="DBs_181127\EquipMaintenanceDB.h" />
+    <ClInclude Include="DBs_181127\FindChangeEquipHistory.h" />
+    <ClInclude Include="DBs_181127\GetAllBaseEquipment.h" />
+    <ClInclude Include="DBs_181127\GetAllChangeEquipHistory.h" />
+    <ClInclude Include="DBs_181127\GetAllEnclosure.h" />
+    <ClInclude Include="DBs_181127\GetAllEquipmentAndEnclosure.h" />
+    <ClInclude Include="DBs_181127\GetRequestedEnclosureEquipID.h" />
+    <ClInclude Include="DBs_181127\ManipulateEnclosure.h" />
+    <ClInclude Include="EnclBaseDialog.h" />
+    <ClInclude Include="EnclBaseResource.h" />
+    <ClInclude Include="EquipStatusDoc.h" />
+    <ClInclude Include="EquipStatusFrm.h" />
+    <ClInclude Include="EquipStatusView.h" />
+    <ClInclude Include="explorer_map.h" />
+    <ClInclude Include="InfoManageDoc.h" />
+    <ClInclude Include="InfoManageFrm.h" />
+    <ClInclude Include="InfoManageView.h" />
+    <ClInclude Include="LoadingDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapDialog.h" />
+    <ClInclude Include="MyDB.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabBaseConf.h" />
+    <ClInclude Include="TabCheckRequest.h" />
+    <ClInclude Include="TabCheckRequestTable.h" />
+    <ClInclude Include="TabEquipChkList.h" />
+    <ClInclude Include="TabEquipStatus.h" />
+    <ClInclude Include="TabErrorEquipStatus.h" />
+    <ClInclude Include="TabEventLog.h" />
+    <ClInclude Include="TabRegBase.h" />
+    <ClInclude Include="TabSecurityLog.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TeamProject.h" />
+    <ClInclude Include="TeamProjectDoc.h" />
+    <ClInclude Include="TeamProjectSet.h" />
+    <ClInclude Include="TeamProjectView.h" />
+    <ClInclude Include="UDPServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseInfoDoc.cpp" />
+    <ClCompile Include="BaseInfoFrm.cpp" />
+    <ClCompile Include="BaseInfoView.cpp" />
+    <ClCompile Include="ChartDlg.cpp" />
+    <ClCompile Include="ChartViewer.cpp" />
+    <ClCompile Include="CheckDoc.cpp" />
+    <ClCompile Include="CheckFrm.cpp" />
+    <ClCompile Include="CheckView2.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DBs_181127\DataManageDB.cpp" />
+    <ClCompile Include="DBs_181127\dbdefine.cpp" />
+    <ClCompile Include="DBs_181127\EquipMaintenanceDB.cpp" />
+    <ClCompile Include="DBs_181127\FindChangeEquipHistory.cpp" />
+    <ClCompile Include="DBs_181127\GetAllBaseEquipment.cpp" />
+    <ClCompile Include="DBs_181127\GetAllChangeEquipHistory.cpp" />
+    <ClCompile Include="DBs_181127\GetAllEnclosure.cpp" />
+    <ClCompile Include="DBs_181127\GetAllEquipmentAndEnclosure.cpp" />
+    <ClCompile Include="DBs_181127\GetRequestedEnclosureEquipID.cpp" />
+    <ClCompile Include="DBs_181127\ManipulateEnclosure.cpp" />
+    <ClCompile Include="EnclBaseDialog.cpp" />
+    <ClCompile Include="EquipStatusDoc.cpp" />
+    <ClCompile Include="EquipStatusFrm.cpp" />
+    <ClCompile Include="EquipStatusView.cpp" />
+    <ClCompile Include="explorer_map.cpp" />
+    <ClCompile Include="InfoManageDoc.cpp" />
+    <ClCompile Include="InfoManageFrm.cpp" />
+    <ClCompile Include="InfoManageView.cpp" />
+    <ClCompile Include="LoadingDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MapDialog.cpp" />
+    <ClCompile Include="MyDB.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabBaseConf.cpp" />
+    <ClCompile Include="TabCheckRequest.cpp" />
+    <ClCompile Include="TabCheckRequestTable.cpp" />
+    <ClCompile Include="TabEquipChkList.cpp" />
+    <ClCompile Include="TabEquipStatus.cpp" />
+    <ClCompile Include="TabErrorEquipStatus.cpp" />
+    <ClCompile Include="TabEventLog.cpp" />
+    <ClCompile Include="TabRegBase.cpp" />
+    <ClCompile Include="TabSecurityLog.cpp" />
+    <ClCompile Include="TeamProject.cpp" />
+    <ClCompile Include="TeamProjectDoc.cpp" />
+    <ClCompile Include="TeamProjectSet.cpp" />
+    <ClCompile Include="TeamProjectView.cpp" />
+    <ClCompile Include="UDPServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EnclBaseResource.rc" />
+    <ResourceCompile Include="TeamProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Logo.bmp" />
+    <Image Include="res\BaseInfoView.ico" />
+    <Image Include="res\TeamProject.ico" />
+    <Image Include="res\TeamProjectDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="EnclBaseResource.aps" />
+    <None Include="res\TeamProject.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TeamProject.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

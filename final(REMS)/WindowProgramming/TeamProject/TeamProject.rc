@@ -1,0 +1,1100 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#include ""res\\TeamProject.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소\r\n"
+    "#include ""l.KOR\\afxprint.rc""    // 인쇄 미리 보기 리소스\r\n"
+    "#include ""l.KOR\\afxdb.rc""        // 데이터베이스 리소스\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.KOR\\afxribbon.rc""        // MFC 리본 및 컨트롤 막대 리소스\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TeamProject.ico"
+
+IDR_TeamProjectTYPE     ICON                    "res\\TeamProjectDoc.ico"
+
+IDR_BASEINFOVIEW_TMPL   ICON                    "res\\BaseInfoView.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",          ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근에 사용한 파일",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        POPUP "도구 모음 및 도킹 창(&T)"
+        BEGIN
+            MENUITEM "<자리 표시자>",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "TeamProject 정보(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_TeamProjectTYPE MENU
+BEGIN
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "REMS 정보(&A)...",              ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "편집"
+    BEGIN
+        MENUITEM "잘라내기(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "TeamProject 정보(&A)...",       ID_APP_ABOUT
+END
+
+IDR_BASEINFOVIEW_TMPL MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",          ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                      ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "인쇄 미리 보기(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근에 사용한 파일",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",                   ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "창(&W)"
+    BEGIN
+        MENUITEM "새 창(&N)",                     ID_WINDOW_NEW
+        MENUITEM "계단식 배열(&C)",                  ID_WINDOW_CASCADE
+        MENUITEM "바둑판식 배열(&T)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "아이콘 정렬(&A)",                  ID_WINDOW_ARRANGE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "정보(&A)...",                   ID_APP_ABOUT
+    END
+END
+
+IDR_BASEINFOVIEW_TMPL1 MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",          ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                      ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "인쇄 미리 보기(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근에 사용한 파일",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",                   ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "창(&W)"
+    BEGIN
+        MENUITEM "새 창(&N)",                     ID_WINDOW_NEW
+        MENUITEM "계단식 배열(&C)",                  ID_WINDOW_CASCADE
+        MENUITEM "바둑판식 배열(&T)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "아이콘 정렬(&A)",                  ID_WINDOW_ARRANGE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "정보(&A)...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About REMS"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "REMS, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_TEAMPROJECT_FORM DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "ddddd",IDC_STATIC,58,57,100,8
+END
+
+IDD_BASEINFOVIEW DIALOGEX 0, 0, 944, 434
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_BASEINFOVIEW,"SysTabControl32",0x0,7,7,930,420
+END
+
+IDD_INFOMANAGEVIEW DIALOGEX 0, 0, 727, 407
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,7,713,393
+END
+
+IDD_DIALOG_REGBASE DIALOGEX 0, 0, 812, 409
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,230,395
+    GROUPBOX        "",IDC_STATIC,244,7,561,395
+    LTEXT           "* 그룹명",IDC_STATIC,18,20,53,13
+    COMBOBOX        IDC_COMBO_GROPNAME1,74,17,95,14,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GROPNAME2,74,33,96,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "추가",IDC_BUTTON_ADD,177,17,48,15
+    LTEXT           "* QR코드",IDC_STATIC,18,52,51,12
+    EDITTEXT        IDC_EDIT_QR,74,49,149,14,ES_AUTOHSCROLL
+    LTEXT           "* 함체위치명",IDC_STATIC,18,71,47,14
+    EDITTEXT        IDC_EDIT_LOCATIONNAME,74,67,148,13,ES_AUTOHSCROLL
+    LTEXT           "함체ID",IDC_STATIC,24,87,44,12
+    EDITTEXT        IDC_EDIT_BASEID,74,83,149,14,ES_AUTOHSCROLL
+    LTEXT           "관리번호",IDC_STATIC,24,102,43,15
+    EDITTEXT        IDC_EDIT_MANAGENUM,74,99,147,14,ES_AUTOHSCROLL
+    LTEXT           "설치구분",IDC_STATIC,24,118,40,13
+    EDITTEXT        IDC_EDIT_INSTALLATIONCLASSIFICATION,74,116,147,15,ES_AUTOHSCROLL
+    LTEXT           "설치주소",IDC_STATIC,24,135,44,10
+    EDITTEXT        IDC_EDIT_INSTALLATIONADDRESS,74,133,148,14,ES_AUTOHSCROLL
+    LTEXT           "위도",IDC_STATIC,24,151,44,14
+    LTEXT           "경도",IDC_STATIC,24,167,40,13
+    LTEXT           "IP",IDC_STATIC,24,184,32,8
+    LTEXT           "Port",IDC_STATIC,24,198,47,10
+    LTEXT           "준공일",IDC_STATIC,23,216,36,13
+    LTEXT           "설치업체",IDC_STATIC,23,232,36,13
+    LTEXT           "유지보수업체",IDC_STATIC,23,248,52,15
+    LTEXT           "업체연락처",IDC_STATIC,23,263,46,14
+    LTEXT           "사용여부",IDC_STATIC,23,278,44,12
+    EDITTEXT        IDC_EDIT_LATITUDE,74,149,95,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LONGITUDE,74,166,95,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "선택",IDC_BUTTON_SELECT,178,149,46,16
+    EDITTEXT        IDC_EDIT_IP,75,183,148,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,75,198,148,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DATE,75,214,93,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_INSTCOMPANY,76,229,148,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAINTCOMPANY,76,245,146,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PHONE,76,260,147,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_STATE,76,276,91,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_BASE,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,252,17,544,377
+    PUSHBUTTON      "삭제",IDC_BUTTON_DELETE,177,33,48,14
+END
+
+IDD_DIALOG_BASECONF DIALOGEX 0, 0, 839, 415
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,247,44
+    GROUPBOX        "",IDC_STATIC,7,44,247,364
+    GROUPBOX        "",IDC_STATIC,259,7,573,233
+    PUSHBUTTON      "검색",IDC_BUTTON_SEARCH,17,20,38,21
+    PUSHBUTTON      "복사",IDC_BUTTON_COPY,61,20,40,21
+    PUSHBUTTON      "저장",IDC_BUTTON_SAVE,108,20,41,21
+    PUSHBUTTON      "수정",IDC_BUTTON_EDIT,156,20,40,21
+    PUSHBUTTON      "취소",IDC_BUTTON_CANCEL,202,20,42,20
+    LTEXT           "* 함체위치명",IDC_STATIC,19,69,49,12
+    EDITTEXT        IDC_EDIT_LOCATIONNAME,73,67,119,13,ES_AUTOHSCROLL
+    LTEXT           "* 기본장비",IDC_STATIC_MODELNAME,20,86,46,13
+    EDITTEXT        IDC_EDIT_EQUIPMENT,73,84,120,13,ES_AUTOHSCROLL
+    LTEXT           "* 담당부서",IDC_STATIC,20,103,46,11
+    COMBOBOX        IDC_COMBO_DEPARTMENT,73,101,119,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "* 설치장소명",IDC_STATIC,20,120,49,12
+    EDITTEXT        IDC_EDIT_LOCATIONADDRESS,73,117,170,14,ES_AUTOHSCROLL
+    LTEXT           "* 설치목적",IDC_STATIC,20,136,47,12
+    COMBOBOX        IDC_COMBO_PURPOSE,73,134,120,14,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "IP",IDC_STATIC,26,152,36,11
+    EDITTEXT        IDC_EDIT_IP,73,150,171,13,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,26,168,45,10
+    EDITTEXT        IDC_EDIT_PORT,73,167,171,12,ES_AUTOHSCROLL
+    LTEXT           "준공일",IDC_STATIC,25,185,44,12
+    COMBOBOX        IDC_COMBO3,73,182,118,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "설치업체",IDC_STATIC,25,201,39,11
+    EDITTEXT        IDC_EDIT_MANUFACTURER,73,199,170,13,ES_AUTOHSCROLL
+    LTEXT           "유지보수업체",IDC_STATIC,24,217,48,13
+    EDITTEXT        IDC_EDIT_MAINTAINER,74,216,170,13,ES_AUTOHSCROLL
+    LTEXT           "업체연락처",IDC_STATIC,24,234,45,11
+    EDITTEXT        IDC_EDIT8,74,232,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,133,232,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,195,232,45,13,ES_AUTOHSCROLL
+    LTEXT           "-",IDC_STATIC,124,234,8,9
+    LTEXT           "-",IDC_STATIC,185,233,8,9
+    LTEXT           "* 사용여부",IDC_STATIC,18,249,43,15
+    COMBOBOX        IDC_COMBO_STATE,74,247,116,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "선택",IDC_BUTTON_SELECTBASE,198,67,42,13
+    PUSHBUTTON      "선택",IDC_BUTTON_SELECTDEVICE,198,85,42,13
+    PUSHBUTTON      "추가",IDC_BUTTON_ADDDEPARTMENT,198,101,42,13
+    PUSHBUTTON      "추가",IDC_BUTTON_ADDPURPOSE,198,134,42,13
+    GROUPBOX        "",IDC_STATIC,260,241,572,168
+    CONTROL         "",IDC_LIST_DEVICE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,268,19,555,214
+    CONTROL         "",IDC_LIST_HISTORY,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,270,255,551,143
+END
+
+IDD_DIALOG_CHECK DIALOGEX 0, 0, 915, 357
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_REQUEST,17,53,222,297,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_REQUEST,24,28,145,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "취소",IDC_BUTTON_CANCEL,210,28,31,14
+    PUSHBUTTON      "요청",IDC_BUTTON_REQUEST,177,28,30,14
+    CONTROL         "",IDC_LIST_DATA2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,247,7,661,343
+    LTEXT           "요청사항 입력",IDC_STATIC,17,44,51,8
+    COMBOBOX        IDC_COMBO_VIEW,27,10,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EQUIPCHECKLIST DIALOGEX 0, 0, 915, 357
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,209,395
+    GROUPBOX        "",IDC_STATIC,221,7,584,395
+    LTEXT           "장비번호",IDC_STATIC,24,20,27,11
+    EDITTEXT        IDC_HUBNAME,68,18,136,12,ES_AUTOHSCROLL
+    LTEXT           "모델명",IDC_STATIC,25,40,23,11
+    EDITTEXT        IDC_INSTALLLOC,68,38,136,12,ES_AUTOHSCROLL
+    LTEXT           "점검유형",IDC_STATIC,24,59,36,11
+    EDITTEXT        IDC_EQUIPTYPE,68,58,136,12,ES_AUTOHSCROLL
+    LTEXT           "요청일시",IDC_STATIC,24,80,36,8
+    EDITTEXT        IDC_CHECKTYPE,68,78,136,12,ES_AUTOHSCROLL
+    LTEXT           "점검내역",IDC_STATIC,25,100,30,9
+    EDITTEXT        IDC_REQUESTDATE,68,98,136,12,ES_AUTOHSCROLL
+    LTEXT           "점검일시",IDC_STATIC,25,121,31,8
+    EDITTEXT        IDC_CHECKDATE,68,119,136,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,229,18,567,376
+    PUSHBUTTON      "점검확인",IDC_CheckConfirm,141,139,63,22
+    PUSHBUTTON      "요청현황보기",IDC_BUTTON_CHARTVIEW,75,139,53,21
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 689, 404
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,198,383,50,14
+    PUSHBUTTON      "취소",IDCANCEL,632,383,50,14
+END
+
+IDD_CHECKVIEW DIALOGEX 0, 0, 947, 383
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_CHECK_2,"SysTabControl32",0x0,7,7,933,369
+END
+
+IDD_CHECKVIEW2 DIALOG 0, 0, 320, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS Shell Dlg"
+BEGIN
+    LTEXT           "TODO: 이 대화 상자에 폼 컨트롤을 배치합니다.",IDC_STATIC,24,42,280,8
+END
+
+IDD_DIALOG_MAP DIALOGEX 0, 0, 569, 359
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "지도"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,368,322,88,23
+    PUSHBUTTON      "취소",IDCANCEL,462,322,89,22
+    CONTROL         "",IDC_EXPLORER_MAP,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,7,14,555,303
+    EDITTEXT        IDC_EDIT1,85,324,102,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,257,325,99,18,ES_AUTOHSCROLL
+    LTEXT           "위도",IDC_STATIC,44,328,32,11
+    LTEXT           "경도",IDC_STATIC,218,328,26,11
+END
+
+IDD_DIALOG_CHART DIALOGEX 0, 0, 470, 293
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "점검요청현황"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHART,"Static",SS_BITMAP,7,7,13,11
+END
+
+IDD_EQUIPSTATUSVIEW DIALOGEX 0, 0, 939, 436
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_EQUIPSTATUS,"SysTabControl32",0x0,7,7,909,422
+END
+
+IDD_TAB_EQUIPSTATUS DIALOGEX 0, 0, 1092, 431
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,11,7,298,414
+    GROUPBOX        "",IDC_STATIC,313,7,768,413
+    EDITTEXT        IDC_EQUIPSTATUS,74,17,231,12,ES_AUTOHSCROLL
+    LTEXT           "장비상태",IDC_STATIC,20,19,26,8
+    LTEXT           "장비Type",IDC_STATIC,21,39,30,8
+    LTEXT           "설치장소명",IDC_STATIC,22,59,32,8
+    EDITTEXT        IDC_EQUIPTYPE,75,38,230,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INSTALLLOCNAME,75,59,230,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LISTEQUIPSTATUS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,317,16,760,400
+END
+
+IDD_TAB_ERROREQUIPSTATUS DIALOGEX 0, 0, 1088, 417
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,12,10,300,33
+    GROUPBOX        "",IDC_STATIC,12,42,300,365
+    GROUPBOX        "",IDC_STATIC,315,10,760,396
+    PUSHBUTTON      "검색",IDC_BUTTON1,215,19,46,17
+    PUSHBUTTON      "취소",IDC_BUTTON2,262,19,46,17
+    LTEXT           "점검상태",IDC_STATIC,19,52,26,8
+    LTEXT           "설치장소",IDC_STATIC,19,70,26,8
+    LTEXT           "장애사유",IDC_STATIC,20,90,26,8
+    EDITTEXT        IDC_EQUIPSTATUS,59,51,248,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INSTALLLOCNAME,59,69,248,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERRORREASON,59,88,248,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_ERR_EQUIP_STATUS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,319,19,752,383
+END
+
+IDD_TAB_SECURITYLOG DIALOGEX 0, 0, 1036, 402
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,12,10,279,380
+    GROUPBOX        "",IDC_STATIC,295,10,727,380
+    LTEXT           "함체위치명",IDC_STATIC,21,20,32,8
+    LTEXT           "출입자명",IDC_STATIC,22,41,26,8
+    EDITTEXT        IDC_LOCATENAME,62,19,223,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INOUTNAME,62,39,223,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SECURITYLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,298,18,718,367
+    LTEXT           "입장시간",IDC_STATIC,22,61,26,8
+    LTEXT           "퇴장시간",IDC_STATIC,23,81,26,8
+    EDITTEXT        IDC_ENTERTIME,62,59,223,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OUTTIME,62,79,223,12,ES_AUTOHSCROLL
+END
+
+IDD_TAB_EVENT_LOG DIALOGEX 0, 0, 1075, 430
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,297,12,768,407
+    LTEXT           "함체위치명",IDC_STATIC,21,25,34,14
+    LTEXT           "이벤트",IDC_STATIC,21,47,20,8
+    EDITTEXT        IDC_LOCATENAME,65,23,220,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INOUTNAME,65,46,220,11,ES_AUTOHSCROLL
+    CONTROL         "",IDC_EVENTLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,301,22,760,393
+    LTEXT           "이벤트 내용",IDC_STATIC,21,67,35,8
+    LTEXT           "발생일시",IDC_STATIC,21,87,26,8
+    EDITTEXT        IDC_EVENTCONTEXT,65,65,220,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OCCURDATE,65,85,220,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,11,12,282,407
+END
+
+IDD_LOADINGDLG DIALOGEX 0, 0, 243, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TeamProject"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TeamProject.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "TeamProject.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TEAMPROJECT_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_BASEINFOVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 937
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 427
+    END
+
+    IDD_INFOMANAGEVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 720
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 400
+    END
+
+    IDD_DIALOG_REGBASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 805
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 402
+    END
+
+    IDD_DIALOG_BASECONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 832
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 408
+    END
+
+    IDD_DIALOG_CHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 908
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_EQUIPCHECKLIST, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 682
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 397
+    END
+
+    IDD_CHECKVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 940
+        VERTGUIDE, 649
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 376
+    END
+
+    IDD_CHECKVIEW2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 562
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 352
+    END
+
+    IDD_DIALOG_CHART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 463
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_EQUIPSTATUSVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 932
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 429
+    END
+
+    IDD_TAB_EQUIPSTATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1085
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 424
+    END
+
+    IDD_TAB_ERROREQUIPSTATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1081
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 410
+    END
+
+    IDD_TAB_SECURITYLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1029
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 395
+    END
+
+    IDD_TAB_EVENT_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1068
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 423
+    END
+
+    IDD_LOADINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_CHECK AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BASEINFOVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CHECKVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_INFOMANAGEVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TEAMPROJECT_FORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EQUIPCHECKLIST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_MAP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_CHART AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB_EVENT_LOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB_SECURITYLOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB_EQUIPSTATUS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB_ERROREQUIPSTATUS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LOADINGDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_REGBASE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_CHECK DLGINIT
+BEGIN
+    IDC_COMBO_VIEW, 0x403, 7, 0
+0xdac0, 0xbcbc, 0xf7c8, "\000" 
+    IDC_COMBO_VIEW, 0x403, 5, 0
+0xf1b8, 0xcfb7, "\000" 
+    IDC_COMBO_VIEW, 0x403, 12, 0
+0xdbc0, 0xbac0, 0xbe20, 0xc0c6, 0xc4cc, 0x00dc, 
+    IDC_COMBO_VIEW, 0x403, 10, 0
+0xabc5, 0xbe20, 0xc0c6, 0xc4cc, 0x00dc, 
+    0
+END
+
+IDD_DIALOG_MAP DLGINIT
+BEGIN
+    IDC_EXPLORER_MAP, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x5049, 0x0000, 0x321b, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE를 초기화할 수 없습니다.  OLE 라이브러리 버전이 올바른지 확인하십시오."
+    IDP_FAILED_OPEN_DATABASE "데이터베이스를 열 수 없습니다."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "REMS"
+    IDR_TeamProjectTYPE     "\nTeamProject\nTeamProject\n\n\nTeamProject.Document\nTeamProject.Document"
+    ID_WINDOW_MANAGER       "창(&W)..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "REMS"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "활성 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "활성 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "활성 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다.\n페이지 설정"
+    ID_FILE_PRINT_SETUP     "프린터 및 인쇄 옵션을 변경합니다.\n인쇄 설정"
+    ID_FILE_PRINT           "활성 문서를 인쇄합니다.\n인쇄"
+    ID_FILE_PRINT_DIRECT    "현재 옵션을 사용하여 활성 문서를 인쇄합니다.\n빠른 인쇄"
+    ID_FILE_PRINT_PREVIEW   "전체 페이지를 표시합니다.\n인쇄 미리 보기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호 및 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "활성 문서에 대해 다른 창을 엽니다.\n새 창"
+    ID_WINDOW_ARRANGE       "창의 아래쪽에 아이콘을 정렬합니다.\n아이콘 정렬"
+    ID_WINDOW_CASCADE       "창이 겹치도록 계단식으로 정렬합니다.\n계단식 창 배열"
+    ID_WINDOW_TILE_HORZ     "창이 겹치지 않도록 바둑판식으로 정렬합니다.\n바둑판식 창 배열"
+    ID_WINDOW_TILE_VERT     "창이 겹치지 않도록 바둑판식으로 정렬합니다.\n바둑판식 창 배열"
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RECORD_FIRST         "첫 레코드로 이동합니다.\n첫 레코드"
+    ID_RECORD_LAST          "마지막 레코드로 이동합니다.\n마지막 레코드"
+    ID_RECORD_NEXT          "다음 레코드로 이동합니다.\n다음 레코드"
+    ID_RECORD_PREV          "이전 레코드로 이동합니다.\n이전 레코드"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+    AFX_IDS_MDICHILD        "이 창을 활성화합니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다.\n미리 보기 취소"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "창 1"
+    IDS_STATUS_PANE2        "창 2"
+    IDS_TOOLBAR_STANDARD    "표준"
+    IDS_TOOLBAR_CUSTOMIZE   "사용자 지정..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "편집"
+    IDR_BASEINFOVIEW_TMPL   "BaseInfoView\nBaseInfoView\nBaseInfoView\nBaseInfoView Files (*.bas)\n.bas\nBaseInfoView.Document\nBaseInfoView Document"
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#include "res\TeamProject.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소
+#include "l.KOR\afxprint.rc"    // 인쇄 미리 보기 리소스
+#include "l.KOR\afxdb.rc"        // 데이터베이스 리소스
+#if !defined(_AFXDLL)
+#include "l.KOR\afxribbon.rc"        // MFC 리본 및 컨트롤 막대 리소스
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
